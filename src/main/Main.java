@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
 
         //Exercise 1
-        System.out.println("Exercise 1");
+        System.out.println("Exercise 2");
         System.out.println("My First Java Program");
         System.out.println(" ");
 

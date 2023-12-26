@@ -23,7 +23,7 @@ public class AbsoluteValue {
         int numberOne = Math.abs(getOne);
         int numberTwo = Math.abs(getTwo);
 
-
+        //Added additional number validation
         if(numberOne != 0 & numberTwo != 0 & numberOne != numberTwo) {
             if (numberOne > numberTwo ) {
                 System.out.println("Number: " + getOne + " is greater number than " + getTwo);

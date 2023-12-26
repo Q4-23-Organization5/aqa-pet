@@ -85,7 +85,7 @@ public class PrintMonthInWord {
                 System.out.println(number + " - December");
                 break;
             default:
-                System.out.println(number + "Not a valid month");
+                System.out.println("Not a valid month");
         }
 
 

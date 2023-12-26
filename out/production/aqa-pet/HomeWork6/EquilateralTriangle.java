@@ -17,7 +17,7 @@ public class EquilateralTriangle {
 
         //Save scanner to variable
         System.out.println("Enter the second side");
-        int getSecond = firstNumb.nextInt();
+        int getSecond = secondNumb.nextInt();
 
 
         //Add number3
@@ -25,7 +25,7 @@ public class EquilateralTriangle {
 
         //Save scanner to variable
         System.out.println("Enter the third side");
-        int getThird = firstNumb.nextInt();
+        int getThird = thirdNumb.nextInt();
 
         //Run checking
         if (getThird != 0 && getOne == getSecond && getOne == getThird) {

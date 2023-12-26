@@ -14,7 +14,7 @@ public class CheckOddEven {
         int number = mySkaner.nextInt();
 
         //checking
-        if (number % 2 == 0){
+        if (number % 2 == 0 & number != 0 ){
             System.out.println("Even number");
         }
         else {

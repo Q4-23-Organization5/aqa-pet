@@ -1,12 +1,7 @@
 public class ChangeEven {
     public static void main(String[] args) {
 
-        /*
-        -create array;
-        -Find even number;
-        -Override even num to 0;
-        -show updated array;
-         */
+
         int[] intArray = {1, 3, 6, 9, 12, 5664, 12, 13, 18};
 
 

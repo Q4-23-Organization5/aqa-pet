@@ -11,13 +11,16 @@ public class Palindrome {
 
 
                 while (i < j) {
-                    i++;
-                    j--;
+
                     if (charArray[i] != charArray[j]) {
                          togle = false;
+                         break;
                     } else {
                         togle = true;
                     }
+
+                    i++;
+                    j--;
 
             }
                 if (togle) {
@@ -25,6 +28,6 @@ public class Palindrome {
                 } else {
                     System.out.println(inputString + " не є паліндромом.");
                 }
-        }
-        }
+    }
+}
 

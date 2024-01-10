@@ -2,8 +2,6 @@ package ex2;
 
 public class BasicCalc {
 
-     double numberOne;
-     double numberTwo;
      protected double numberOne;
      protected double numberTwo;
 

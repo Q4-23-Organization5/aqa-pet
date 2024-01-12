@@ -3,26 +3,33 @@ package ex2;
 public class Start {
     public static void main(String[] args){
 
+    /*
+           BasicCalc bas = new BasicCalc(3,7);
 
-        BasicCalc bas = new BasicCalc(3,7);
+               System.out.println(bas + " - " + bas.addition());
 
-            System.out.println(bas + " - " + bas.addition());
+           EngineeringCalc eng = new EngineeringCalc(3);
 
-        EngineeringCalc eng = new EngineeringCalc(3);
+               System.out.println(eng + " - " + eng.squared());
 
-            System.out.println(eng + " - " + eng.squared());
+           EngineeringCalc second = new EngineeringCalc(6,3);
 
-        EngineeringCalc second = new EngineeringCalc(6,3);
+               System.out.println(second + " - " + second.division());
 
-            System.out.println(second + " - " + second.division());
+           ItCalc third = new ItCalc(7);
 
-        ItCalc third = new ItCalc(7);
+               System.out.println(third + " - " + third.log());
 
-            System.out.println(third + " - " + third.log());
+           ItCalc fourth = new ItCalc(3,5);
 
-        ItCalc fourth = new ItCalc(3,5);
+               System.out.println(fourth + " - " + fourth.multiplication());
 
-            System.out.println(fourth + " - " + fourth.multiplication());
+
+    */
+
+    System.out.println(BasicCalc.addition(3,7));
+    System.out.println(EngineeringCalc.squared(7));
+    System.out.println(ItCalc.log(7));
 
 
   }

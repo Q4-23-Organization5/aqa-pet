@@ -1,8 +1,9 @@
+
 package ex2;
 
 public class EngineeringCalc extends BasicCalc {
 
-
+/*
     public EngineeringCalc(double numberOne, double numberTwo) {
         super(numberOne, numberTwo);
     }
@@ -12,10 +13,12 @@ public class EngineeringCalc extends BasicCalc {
     }
 
 
-    public double squared() {
-        return super.numberOne * super.numberOne;
-    }
+ */
 
+    public static double squared(double numberOne) {
+        return numberOne * numberOne;
+    }
+/*
     @Override
     public String toString() {
         return "EngineeringCalc{" +
@@ -23,4 +26,7 @@ public class EngineeringCalc extends BasicCalc {
                 ", numberTwo=" + numberTwo +
                 '}';
     }
+
+ */
 }
+

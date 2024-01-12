@@ -2,6 +2,7 @@ package ex2;
 
 public class BasicCalc {
 
+/*
      protected double numberOne;
      protected double numberTwo;
 
@@ -14,28 +15,32 @@ public class BasicCalc {
         this.numberOne = numberOne;
     }
 
-    public double addition () {
+
+ */
+    public static double addition (double numberOne, double numberTwo) {
         return numberOne + numberTwo;
     }
 
-    public double subtraction () {
+    public static double subtraction (double numberOne, double numberTwo) {
         return numberOne - numberTwo;
     }
 
-    public double multiplication () {
+    public static double multiplication (double numberOne, double numberTwo) {
         return numberOne * numberTwo;
 
     }
 
-    public double division () {
+    public static double division (double numberOne, double numberTwo) {
         return numberOne / numberTwo;
     }
 
-    @Override
-    public String toString() {
+
+/*    public String toString() {
         return "BasicCalc{" +
                 "numberOne=" + numberOne +
                 ", numberTwo=" + numberTwo +
                 '}';
     }
+
+ */
 }

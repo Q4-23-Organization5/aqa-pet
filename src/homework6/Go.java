@@ -1,4 +1,4 @@
-public class Main {
+public class Go {
     public static void main(String[] args) {
 
         //Exercise 1

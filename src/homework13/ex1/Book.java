@@ -2,6 +2,8 @@ package ex1;
 
 import org.jetbrains.annotations.NotNull;
 
+import java.util.stream.Stream;
+
 public class Book  implements Printable {
 
     final private String name;
@@ -15,13 +17,12 @@ public class Book  implements Printable {
         System.out.println("Book - " + name);
     }
 
+
     public static void printBooks(Printable @NotNull [] printable) {
-        System.out.println("Printing Book: ");
-        for (Printable num : printable) {
-            if (num instanceof Book) {
-                num.print();
-            }
-        }
+        System.out.println("Printing Magazine: ");
+        Stream.of(printable)
+                .filter(Book.class::isInstance)
+                .forEach(Printable::print);
     }
 
 }

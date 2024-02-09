@@ -1,10 +1,5 @@
 package ex1;
-
+@FunctionalInterface
 public interface Printable {
-
-
-    void print();
-
-    Printable printableLambda = () -> System.out.println("Printing...");
-
+    void print() ;
 }

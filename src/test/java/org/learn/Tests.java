@@ -3,7 +3,6 @@ package org.learn;
 import homework13.ex2.SortMethods;
 import homework13.ex2.User;
 import jdk.jfr.Description;
-import org.apache.logging.log4j.core.util.Assert;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
@@ -16,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class Adad {
+public class Tests {
 
     static ArrayList<User> list;
     static ArrayList<User> emptyList;

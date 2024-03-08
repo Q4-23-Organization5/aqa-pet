@@ -16,7 +16,7 @@ public class Herokuapp {
   }
 
   @Test
-  public void positiveTest() throws InterruptedException {
+  public void positiveTest() {
     String checkText = "You logged into a secure area!";
 
     driver.get("https://the-internet.herokuapp.com/login");
@@ -29,30 +29,20 @@ public class Herokuapp {
     WebElement loginButton = driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']"));
 
     loginButton.click();
-
     WebElement authResult = driver.findElement(By.xpath("//div[@id='flash']"));
-
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
-    try {
-      innerElement =
+    innerElement =
           js.executeScript("return arguments[0].firstChild.textContent", authResult)
               .toString()
               .trim();
-      System.out.println(innerElement);
-    } catch (StaleElementReferenceException exception) {
-      innerElement =
-          js.executeScript("return arguments[0].firstChild.textContent", authResult)
-              .toString()
-              .trim();
-      System.out.println(innerElement);
-    }
+    System.out.println(innerElement);
 
     Assertions.assertEquals(checkText, innerElement);
   }
 
   @Test
-  public void negativeTest() throws InterruptedException {
+  public void negativeTest() {
     String checkText = "Your password is invalid!";
 
     driver.get("https://the-internet.herokuapp.com/login");
@@ -62,27 +52,18 @@ public class Herokuapp {
     driver
         .findElement(By.xpath("//div[@class='large-6 small-12 columns']//input[@id='password']"))
         .sendKeys("SuperSecretPassword");
-    WebElement loginButton = driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']"));
 
+    WebElement loginButton = driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']"));
     loginButton.click();
 
     WebElement authResult = driver.findElement(By.xpath("//div[@id='flash']"));
-
     JavascriptExecutor js = (JavascriptExecutor) driver;
 
-    try {
-      innerElement =
-          js.executeScript("return arguments[0].firstChild.textContent", authResult)
-              .toString()
-              .trim();
-      System.out.println(innerElement);
-    } catch (StaleElementReferenceException exception) {
-      innerElement =
-          js.executeScript("return arguments[0].firstChild.textContent", authResult)
-              .toString()
-              .trim();
-      System.out.println(innerElement);
-    }
+    innerElement =
+            js.executeScript("return arguments[0].firstChild.textContent", authResult)
+                    .toString()
+                    .trim();
+    System.out.println(innerElement);
 
     Assertions.assertEquals(checkText, innerElement);
   }

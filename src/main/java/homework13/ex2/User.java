@@ -10,7 +10,6 @@ public class User {
         this.secondName = secondName;
         this.age = age;
     }
-  
     public User(String firstName, String secondName) {
         this.firstName = firstName;
         this.secondName = secondName;

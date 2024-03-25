@@ -15,6 +15,12 @@ public class User {
         this.secondName = secondName;
     }
 
+
+    public User(String firstName, String secondName) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+    }
+
     public String getFirstName() {
         return firstName;
     }

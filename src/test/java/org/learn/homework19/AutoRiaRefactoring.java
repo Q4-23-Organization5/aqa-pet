@@ -4,7 +4,7 @@ import homework14.loger.StartGame;
 import homework19AutoRiaRefactoring.CarListPage2;
 import homework19AutoRiaRefactoring.CarPage2;
 import homework19AutoRiaRefactoring.HomePage2;
-import homework19AutoRiaRefactoring.driverfactory.BrowserFactory;
+import driverfactory.BrowserFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

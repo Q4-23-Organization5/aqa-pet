@@ -1,4 +1,4 @@
-package in.preqresHm21;
+package in.preqresHm21.users;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

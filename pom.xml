@@ -21,6 +21,7 @@
         <rest-assured-version>5.4.0</rest-assured-version>
         <jackson-version>2.17.0</jackson-version>
         <lombok-versions>1.18.32</lombok-versions>
+        <allure.version>2.25.0</allure.version>
 
     </properties>
 
@@ -91,7 +92,6 @@
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>${rest-assured-version}</version>
-            <scope>test</scope>
         </dependency>
 
         <dependency>
@@ -113,6 +113,28 @@
             <scope>provided</scope>
         </dependency>
 
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-bom</artifactId>
+            <version>${allure.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-assertj</artifactId>
+            <version>${allure.version}</version>
+        </dependency>
+
+
 
     </dependencies>
 
@@ -124,6 +146,15 @@
                 <version>${maven.surefire.plugin}</version>
                 <configuration>
                     <includes>**/SmokeSuite.java</includes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.10.0</version>
+                <configuration>
+                    <reportVersion>2.14.0</reportVersion>
                 </configuration>
             </plugin>
         </plugins>

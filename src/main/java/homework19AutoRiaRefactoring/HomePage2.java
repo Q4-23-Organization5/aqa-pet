@@ -1,5 +1,6 @@
 package homework19AutoRiaRefactoring;
 import homework14.loger.StartGame;
+import io.qameta.allure.Step;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
@@ -67,6 +68,7 @@ public class HomePage2 extends BasePage {
         logger.debug("Model is selected");
     }
 
+    @Step
     public void chooseRegion(String region) {
         labelBrand.isSelected();
         logger.debug("label Brand is selected");
@@ -76,6 +78,7 @@ public class HomePage2 extends BasePage {
         logger.debug("Region is selected");
     }
 
+    @Step
     public void chooseYearsRange(String from, String to) {
         openYearsRange.click();
         logger.debug("Years range dropdown is opened");

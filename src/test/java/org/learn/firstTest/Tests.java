@@ -1,4 +1,4 @@
-package org.learn;
+package org.learn.firstTest;
 
 import homework13.ex2.SortMethods;
 import homework13.ex2.User;

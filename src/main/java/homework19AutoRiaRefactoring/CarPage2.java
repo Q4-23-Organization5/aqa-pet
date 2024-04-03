@@ -1,5 +1,6 @@
 package homework19AutoRiaRefactoring;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,10 +19,12 @@ public class CarPage2 extends BasePage{
     @FindBy(xpath = "//section[@id='userInfoBlock']//div[text()=' Ярослав']")
     private WebElement seller;
 
+    @Step
     public String checkMileage() {
        return mileage.getText();
     }
 
+    @Step
     public String getSellerName() {
         return seller.getText();
     }

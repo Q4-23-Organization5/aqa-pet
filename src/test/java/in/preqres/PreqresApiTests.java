@@ -8,6 +8,9 @@ import in.preqresHm21.spec.Specification;
 import in.preqresHm21.users.UserData;
 import in.preqresHm21.users.UserTime;
 import in.preqresHm21.users.UserTimeResponse;
+import io.qameta.allure.Flaky;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -19,6 +22,7 @@ import java.util.stream.Collectors;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.core.IsEqual.equalTo;
 
+@DisplayName("Preqres API Tests")
 public class PreqresApiTests {
     private final static String URL = "https://reqres.in/";
 
@@ -125,6 +129,11 @@ public class PreqresApiTests {
 
     @Test
     @DisplayName("Flaky.Время сервера и компьютера совпадают")
+<<<<<<< HEAD
+=======
+    @Severity(SeverityLevel.MINOR)
+    @Flaky
+>>>>>>> HM_21_22
     public void checkServerAndPcDateTest(){
         Specification.installSpecification(Specification.requestSpec(URL), Specification.responseSpecOK200());
         UserTime user = new UserTime("morpheus","zion resident");

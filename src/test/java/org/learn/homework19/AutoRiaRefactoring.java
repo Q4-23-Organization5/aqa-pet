@@ -4,6 +4,7 @@ import homework14.loger.StartGame;
 import homework19AutoRiaRefactoring.CarListPage2;
 import homework19AutoRiaRefactoring.CarPage2;
 import homework19AutoRiaRefactoring.HomePage2;
+import homework19AutoRiaRefactoring.driverfactory.BrowserFactory;
 import driverfactory.BrowserFactory;
 import io.qameta.allure.Step;
 import lombok.Setter;

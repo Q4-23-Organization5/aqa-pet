@@ -1,7 +1,6 @@
 package org.learn.firstTest;
 
 import homework13.ex2.SortMethods;
-import ex2.User;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.AfterAll;
@@ -9,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-import org.openqa.selenium.WebDriver;
+import homework13.ex2.User;
 
 
 import java.util.ArrayList;
@@ -18,8 +17,8 @@ import java.util.List;
 
 public class Tests {
 
-    static ArrayList<ex2.User> list;
-    static ArrayList<ex2.User> emptyList;
+    static ArrayList<User> list;
+    static ArrayList<User> emptyList;
 
     @BeforeAll
     static void prepareData() {

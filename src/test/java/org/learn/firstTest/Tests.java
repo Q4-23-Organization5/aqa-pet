@@ -1,7 +1,7 @@
 package org.learn.firstTest;
 
 import homework13.ex2.SortMethods;
-import homework13.ex2.User;
+import ex2.User;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.AfterAll;
@@ -18,8 +18,8 @@ import java.util.List;
 
 public class Tests {
 
-    static ArrayList<User> list;
-    static ArrayList<User> emptyList;
+    static ArrayList<ex2.User> list;
+    static ArrayList<ex2.User> emptyList;
 
     @BeforeAll
     static void prepareData() {

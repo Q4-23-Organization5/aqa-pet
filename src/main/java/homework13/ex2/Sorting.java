@@ -1,6 +1,7 @@
 package homework13.ex2;
 
 import java.util.ArrayList;
+import ex2.User;
 
 public class Sorting {
 

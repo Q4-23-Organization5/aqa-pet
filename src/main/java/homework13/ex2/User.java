@@ -1,4 +1,4 @@
-package homework13.ex2;
+package ex2;
 
 public class User {
     private String firstName;
@@ -14,6 +14,15 @@ public class User {
         this.firstName = firstName;
         this.secondName = secondName;
     }
+<<<<<<< HEAD
+=======
+
+
+    public User(String firstName, String secondName) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+    }
+>>>>>>> origin/HM_21_22
 
     public String getFirstName() {
         return firstName;

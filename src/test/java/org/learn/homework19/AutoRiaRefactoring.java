@@ -5,23 +5,19 @@ import homework19AutoRiaRefactoring.CarListPage2;
 import homework19AutoRiaRefactoring.CarPage2;
 import homework19AutoRiaRefactoring.HomePage2;
 import driverfactory.BrowserFactory;
-import io.qameta.allure.Severity;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import java.time.Duration;
 
-import static io.qameta.allure.SeverityLevel.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-@DisplayName("AutoRia UI Tests")
 public class AutoRiaRefactoring {
 
     private WebDriver driver;
@@ -34,7 +30,6 @@ public class AutoRiaRefactoring {
     public void initBrowser() {
         driver = BrowserFactory.getDriver("FIREFOX");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
-        driver.manage().window().fullscreen();
         logger.info("Driver {} is initialized", driver);
         js = (JavascriptExecutor) driver;
 
@@ -55,8 +50,6 @@ public class AutoRiaRefactoring {
 
 
     @Test
-    @DisplayName("Find Car By Filter")
-    @Severity(BLOCKER)
     public void findCarByFilters () {
         homePage2.chooseCategories("1");
         logger.info("Categories is selected");
@@ -77,8 +70,6 @@ public class AutoRiaRefactoring {
     }
 
     @Test
-    @DisplayName("Check car by name")
-    @Severity(CRITICAL)
     public void checkCarByNumber() {
         logger.info("checkCarByNumber starts");
         homePage2.chooseCategories("1");
@@ -101,7 +92,6 @@ public class AutoRiaRefactoring {
     }
 
     @Test
-    @DisplayName("The submit button is present")
     public void submitPresent() {
         homePage2.openPage();
         homePage2.submitPresent();
@@ -111,8 +101,6 @@ public class AutoRiaRefactoring {
 
 
     @Test
-    @DisplayName("Check mileage of auto")
-    @Severity(CRITICAL)
     public void checkMileage() {
         homePage2.openPage();
         homePage2.chooseCategories("1");
@@ -128,8 +116,6 @@ public class AutoRiaRefactoring {
     }
 
     @Test
-    @Severity(NORMAL)
-    @DisplayName("Check seller name")
     public void checkSellerName() {
         homePage2.openPage();
         homePage2.chooseCategories("1");
@@ -142,5 +128,9 @@ public class AutoRiaRefactoring {
 
         assertThat(carPage2.getSellerName(),equalToIgnoringWhiteSpace("Ярослав"));
     }
+
+
+
+
 
 }

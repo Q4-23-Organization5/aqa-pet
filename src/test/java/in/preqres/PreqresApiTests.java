@@ -129,11 +129,8 @@ public class PreqresApiTests {
 
     @Test
     @DisplayName("Flaky.Время сервера и компьютера совпадают")
-<<<<<<< HEAD
-=======
     @Severity(SeverityLevel.MINOR)
     @Flaky
->>>>>>> HM_21_22
     public void checkServerAndPcDateTest(){
         Specification.installSpecification(Specification.requestSpec(URL), Specification.responseSpecOK200());
         UserTime user = new UserTime("morpheus","zion resident");

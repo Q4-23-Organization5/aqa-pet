@@ -24,6 +24,12 @@ public class User {
     }
 >>>>>>> origin/HM_21_22
 
+
+    public User(String firstName, String secondName) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+    }
+
     public String getFirstName() {
         return firstName;
     }

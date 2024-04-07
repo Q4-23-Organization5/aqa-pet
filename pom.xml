@@ -24,6 +24,8 @@
         <lombok-versions>1.18.32</lombok-versions>
         <allure.version>2.25.0</allure.version>
         <aspectj.version>1.9.22</aspectj.version>
+        <cucumber.version>7.15.0</cucumber.version>
+        <gherkin.version>26.2.0</gherkin.version>
 
     </properties>
 
@@ -341,9 +343,24 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>gherkin</artifactId>
+            <version>${gherkin.version}</version>
+        </dependency>
 
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit-platform-engine</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
 
-
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+        </dependency>
 
     </dependencies>
 

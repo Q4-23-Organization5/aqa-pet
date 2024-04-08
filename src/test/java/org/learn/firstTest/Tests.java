@@ -1,7 +1,6 @@
-package org.learn;
+package org.learn.firstTest;
 
 import homework13.ex2.SortMethods;
-import homework13.ex2.User;
 import jdk.jfr.Description;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.AfterAll;
@@ -9,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
-import org.openqa.selenium.WebDriver;
+import homework13.ex2.User;
 
 
 import java.util.ArrayList;

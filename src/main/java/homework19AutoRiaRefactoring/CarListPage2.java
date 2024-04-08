@@ -1,6 +1,7 @@
 package homework19AutoRiaRefactoring;
 
 import homework14.loger.StartGame;
+import io.qameta.allure.Step;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,6 +23,7 @@ public class CarListPage2 extends BasePage{
     @FindBy(xpath = "//a[@title='Седан Chevrolet Aveo 2009 в Сваляві']")
     private WebElement carButton;
 
+    @Step
     public String findVinCod() {
         String vinResult = "Y6DSF69YE8W041095";
         vinCod.isDisplayed();
@@ -29,6 +31,7 @@ public class CarListPage2 extends BasePage{
         return vinResult;
     }
 
+    @Step
     public String getCarNumber() {
         String number = "AO2475EO";
         try{
@@ -40,6 +43,7 @@ public class CarListPage2 extends BasePage{
         return number;
     }
 
+    @Step
     public void clickOnCar() {
         carButton.click();
         logger.debug("Car button is found");

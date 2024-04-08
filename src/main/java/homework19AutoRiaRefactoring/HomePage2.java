@@ -47,12 +47,14 @@ public class HomePage2 extends BasePage {
     @FindBy(xpath = "//button[@type='submit']")
     private WebElement submitPath;
 
+    @Step
     public void chooseCategories(String value) {
         Select selectCategories = new Select(categories);
         selectCategories.selectByValue(value);
         logger.debug("Categories is created");
     }
 
+    @Step
     public void chooseBrand(){
         openBrand.click();
         logger.debug("dropdown is opened");
@@ -60,6 +62,7 @@ public class HomePage2 extends BasePage {
         logger.debug("Chevrolet is selected");
     }
 
+    @Step
     public void chooseModel(String model) {
         openModel.click();
         logger.debug("Model dropdown is opened");
@@ -88,10 +91,12 @@ public class HomePage2 extends BasePage {
         logger.debug("Years To is selected");
     }
 
+    @Step
     public String submitPresent() {
         return submitPath.getText();
     }
 
+    @Step
     public void submit(JavascriptExecutor js) {
         try{
             submitPath.click();

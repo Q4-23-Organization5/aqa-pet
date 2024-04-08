@@ -4,10 +4,7 @@ import homework14.loger.StartGame;
 import homework19AutoRiaRefactoring.CarListPage2;
 import homework19AutoRiaRefactoring.CarPage2;
 import homework19AutoRiaRefactoring.HomePage2;
-import homework19AutoRiaRefactoring.driverfactory.BrowserFactory;
 import driverfactory.BrowserFactory;
-import io.qameta.allure.Step;
-import lombok.Setter;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -31,7 +28,7 @@ public class AutoRiaRefactoring {
     final Logger logger = LogManager.getLogger(StartGame.class);
     @BeforeEach
     public void initBrowser() {
-        driver = BrowserFactory.getDriver("CHROME");
+        driver = BrowserFactory.getDriver("FIREFOX");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
         logger.info("Driver {} is initialized", driver);
         js = (JavascriptExecutor) driver;

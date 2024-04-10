@@ -3,7 +3,6 @@ package suite;
 import in.preqres.PreqresApiTests;
 import io.chucknorris.ChuckNorrisSteps;
 import org.junit.platform.suite.api.SelectClasses;
-import org.junit.platform.suite.api.SelectClasspathResource;
 import org.junit.platform.suite.api.Suite;
 import org.learn.homework19.AutoRiaRefactoring;
 
